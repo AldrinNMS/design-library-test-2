@@ -3,6 +3,6 @@ import { Button } from '@mui/material';
 
 export const NMSButton = () => {
   return (
-    <Button>hehe</Button>
+    <Button>luh</Button>
   )
 }
