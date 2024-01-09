@@ -1,2 +1,2 @@
-export { default as NMSButton } from "../src/components";
+import { NMSButton } from "./components/Input/Button";
 
