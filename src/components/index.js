@@ -1,2 +1,2 @@
-export { NMSButton } from "./Button/Button";
+export { default as NMSButton } from "./Button";
 
