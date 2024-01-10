@@ -1,1 +1,1 @@
-export { FormikTextfield } from './FormikTextfield';
+export { Textfield } from './Textfield';

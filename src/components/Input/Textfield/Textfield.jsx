@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { InfoRounded } from "@mui/icons-material";
 import { TextField, Tooltip } from "@mui/material";
-export const FormikTextField = (props) => {
+export const TextField = (props) => {
   const {
     variant = "outlined",
     fieldchange,
