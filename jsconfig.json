@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "design-library-test-2/*": ["../node_modules/design-library-test-2/*"]
-    }
-  },
-  "include": ["src/**/*.js"]
-}

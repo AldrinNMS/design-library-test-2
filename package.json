@@ -4,19 +4,24 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-app-rewired start",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "rewired-build": "react-app-rewired build",
+    "test": "react-app-rewired test"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.3",
     "@mui/material": "^5.15.3",
     "@mui/styled-engine-sc": "^6.0.0-alpha.11",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "formik": "^2.4.5",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -31,6 +36,8 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "react-app-rewire-alias": "^1.1.7",
+    "react-app-rewired": "^2.2.1",
     "rollup": "^4.9.4",
     "rollup-plugin-auto-import": "^0.0.12",
     "vite": "^5.0.8"

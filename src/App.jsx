@@ -1,17 +1,13 @@
-import { useState } from 'react'
-
 import './App.css'
-import { NMSButton } from './components'
-// import { NMSButton } from './components/Button/Button';
-// NMSButton
+import { NMSButton } from './components/Input/Button/Button'
+import { FormikTextField } from './components/Input/Textfield/FormikTextfield'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <NMSButton />
-    </>
+    <div>
+      <NMSButton>Hi</NMSButton>
+      <FormikTextField placeholder="hehe" />
+    </div>
   )
 }
 
