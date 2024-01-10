@@ -3,11 +3,10 @@ import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 
 const configObject = {
-  input: 'dist/index.js',
+  input: 'src/index.js',
   output: {
-    file: 'dist/index.js',
-    format: 'umd',
-    name: 'design-library-test-2',
+    dir: 'dist',
+    format: 'cjs',
   },
   plugins: [
     resolve(),
