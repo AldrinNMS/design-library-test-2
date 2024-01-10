@@ -1,3 +1,3 @@
-export { default as NMSButton } from './Button';
+export { NMSButton } from './Button';
 
 

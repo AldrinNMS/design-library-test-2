@@ -32,6 +32,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "rollup": "^4.9.4",
+    "rollup-plugin-auto-import": "^0.0.12",
     "vite": "^5.0.8"
   }
 }
