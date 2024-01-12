@@ -1,6 +1,8 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, ThemeProvider, useTheme } from "@mui/material";
 import PropTypes from "prop-types";
+import { dark, lightTheme } from "../../../theme/myTheme";
+
 
 export const NMSButton = ({
   children,
@@ -18,9 +20,14 @@ export const NMSButton = ({
   endIcon,
   sx,
   variant,
+  isDarkMode
 }) => {
+  const theme = isDarkMode ? dark : lightTheme;
+
   return (
+    // <ThemeProvider theme={myTheme}>
     <Button
+      style={{ color: theme.palette.primary, fontFamily: theme.typography.fontFamily }}
       classes={classes}
       color={color}
       component={component}
@@ -30,9 +37,15 @@ export const NMSButton = ({
       startIcon={startIcon}
       sx={sx}
       variant={variant}
+      disabled={disabled}
+
     >
       {children}
     </Button>
+    // </ThemeProvider>
+
+
+
   );
 };
 

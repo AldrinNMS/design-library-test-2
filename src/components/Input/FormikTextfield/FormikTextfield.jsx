@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import { InfoRounded } from "@mui/icons-material";
-import { TextField, Tooltip } from "@mui/material";
-export const TextField = (props) => {
+import { TextField, ThemeProvider, Tooltip } from "@mui/material";
+// import { myTheme } from "../../../theme/myTheme";
+export const FormikTextfield = (props) => {
   const {
     variant = "outlined",
     fieldchange,
@@ -25,6 +26,7 @@ export const TextField = (props) => {
   } = props;
 
   return (
+    // <ThemeProvider theme={myTheme}>
     <TextField
       size={size}
       placeholder={title}
@@ -52,7 +54,7 @@ export const TextField = (props) => {
           fontWeight: readOnly ? 700 : 400,
         },
         readOnly: readOnly,
-        disableUnderline: true,
+
         startAdornment: icon ? icon : "",
         endAdornment: message ? (
           <Fragment>
@@ -67,5 +69,7 @@ export const TextField = (props) => {
     >
       {children}
     </TextField>
+    // {/* </ThemeProvider> */ }
+
   );
 };

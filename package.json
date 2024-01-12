@@ -1,7 +1,7 @@
 {
-  "name": "design-library-test-2",
+  "name": "nms-design-lib-test",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.12",
   "type": "module",
   "main": "src/index.js",
   "exports": {
@@ -9,7 +9,8 @@
       "import": "./src/index.js",
       "require": "./src/index.js"
     },
-    "./components/*": "./src/components/*"
+    "./components/*": "./src/components/*",
+    "./theme/*" : "./src/theme/*"
   },
   "scripts": {
     "dev": "vite",
@@ -21,6 +22,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/lato": "^5.0.18",
     "@mui/icons-material": "^5.15.3",
     "@mui/material": "^5.15.3",
     "@mui/styled-engine-sc": "^6.0.0-alpha.11",
